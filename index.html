@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Weather</title>
+</head>
+<body>
+
+    <div class="w-screen relative h-screen bg-[url('bgImg.jpg')] bg-cover bg-center overflow-hidden">
+        <!-- Input section -->
+        <div class="pl-20 pt-14 relative w-fit flex flex-col  hover:scale-105 transition-all font-poppins  duration-500 text-text">
+            <h1 class="font-bold pl-6 mb-4 text-xl ">Search for city</h1>
+            <input class="h-20 w-[30vh]  md:w-[50vh] lg:w-[70vh] pl-10 pr-14 focus:outline-none text-3xl font-semibold rounded-full  bg-mycolor center" type="text" id="cityName" placeholder="Patna">
+            <button class="absolute h-20 px-7 text-3xl font-semibold tracking-wide rounded-full right-0 bottom-0 bg-green-600 hover:bg-hovergreen" id="getbtn">Get</button>
+        </div>
+
+        <h1 class="text-text font-poppins font-bold pl-20 text-6xl lg:text-9xl my-20 text-center" id="temprature">21   °C</h1>
+
+        <div id="contents" class="flex flex-col  items-center gap-10 lg:flex-row lg:justify-between w-2/4 mx-auto font-bold pl-6 mb-4 font-poppins text-xl text-text">
+            <p id="humidity">Windspeed:</p>
+            <p id="feelslike">Humidity:</p>
+            <p id="windspeed">feelslike:</p>
+        </div>
+
+        <!-- City and state -->
+        <div class="flex lg:items-end lg:flex-row flex-col items-center-center lg:pl-20 mt-14 right-0 absolute left-9 bottom-20 font-bold text-text font-poppins">
+            <h1 class=" text-6xl lg:text-9xl align-baseline" id="heading">Patna</h1>
+            <p class="text-4xl pb-2 align-baseline lg:pl-7" id="stateName">Bihar</p>   
+        </div>
+        
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>
